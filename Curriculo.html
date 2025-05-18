@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+</head>
+<body>
+    <h1>formulário de candidatura</h1>
+    <form method="post">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+
+        <br><br>
+
+        <label for="">Número de telemóvel</label>
+        <input type="tel" name="telemovel" id="telemovel" pattern="[0-9]+" placeholder="ex: 938545781" required>
+
+        <br><br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="email@email.com" required>
+
+        <br><br>
+
+        <label for="website">Website / Linkedin (opcional)</label>
+        <input type="url" name="website" id="website" placeholder="ex: https://www.linkedin.com/feed/">
+
+        <br><br>
+
+        <label for="curriculum">Currículum Vitae: </label>
+        <input type="file" name="curriculum" id="curriculum" required>
+
+        <br><br>
+
+        <label for="empresa">Nome da última empresa onde trabalhou:</label>
+        <input type="text" name="empresa" id="empresa" required>
+
+        <br><br>
+
+        <label for="data-inicio">Data de início do cargo nessa empresa</label>
+        <input type="date" name="data-inicio" id="data-inicio" required>
+
+        <br><br>
+
+        <label for="data-fim">Data de término do cargo nessa empresa (opcional)</label>
+        <input type="date" name="data-fim" id="data-inicio">
+
+        <br><br>
+
+        <label for="meses-aviso">Quantos meses precisam de dar à casa: </label>
+        <input type="number" id="meses-aviso" name="meses-aviso" min="1" max="24" step="1" value="1" placeholder="Meses">
+
+        <br><br>
+
+        <label for="coverletter">Escreva uma Cover Letter (opcional)</label><br>
+        <textarea id="coverletter" name="coverletter" rows="8" cols="50" maxlength="1500" placeholder="Fale um pouco sobre você (máx. 1500 caracteres)"></textarea>
+
+        <br><br>
+
+        <label for="origem">Onde ouviu falar de nós? (opcional)</label><br>
+        <select name="origem" id="origem">
+          <option value="">--Selecione uma opção--</option>
+          <option value="google">Google</option>
+          <option value="amigos">Amigos</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="instagram">Instagram</option>
+          <option value="outro">Outro</option>
+        </select>
+        
+        <br><br><br>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
